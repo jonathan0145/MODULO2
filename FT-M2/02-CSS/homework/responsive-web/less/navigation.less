@@ -1,1 +1,30 @@
 // Código de Nav acá
+nav{
+    background-color: @background-nav;
+    @{ancho}: @ancho-m;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    
+    h1{
+        text-align: center;
+        font-size: @tamano;
+        padding-top: 20px;
+        margin-bottom: 20px; 
+    };
+
+    ul{
+        @{ancho}: @ancho-m - 60%;
+        display: flex;
+        justify-content: space-around;
+        margin-left: 30%;
+        li{
+            a{
+                color: @ebony-clay;
+                text-decoration: none;
+                font-size: 1.6rem;
+            };
+        };
+    };
+
+
+}
