@@ -1,0 +1,66 @@
+<!-- todo Selectors -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript">
+            const cajas = document.getElementsByClassName("caja");
+            const caja1 = document.getElementById('caja1');
+
+            //queryselecto
+            //busca elementos basandose en uno o mas selectores CSS.
+            const cajass = document.querySelector('.caja');
+            const caja2 = document.querySelector('#caja2');
+
+            const divs = document.querySelectorAll('.pas');
+
+
+            const bodys = document.getElementsByTagName("body");
+
+            //createElement
+            const newli = document.createElement('p');
+
+            //innerHTML
+            newli.innerHTML = "este parrafo fue creado por medio del dom";
+            cajas.innerHTML = "todas son cajas";
+
+            // .[attribute] .[setAttribute]
+            caja1.setAttribute('dir', 'rtl');
+
+            //.style
+            cajas.style.height = '50%';
+            cajas.style.width = '200px';
+            cajas.style.background = 'red';
+
+            //.appendchild
+            cajass.appendChild(newli);
+
+            //Event Listeners
+            //click
+            caja2.onclick = function(){
+                console.log('click');
+            }
+
+            //addEventListener
+            caja1.addEventListener('mouseenter', function() {
+                console.log("el mouse entro");
+            });
+        </script>
+    </head>
+    <body>
+        <div class="caja" id="caja1" style="width: 50%;"></div>
+        <div class="caja" id="caja2"></div>
+        <div class="caja"></div>
+
+        <p class="pas">este es el parrafo numero 1</p>
+        <p class="pas">este es el parrafo numero 2</p>
+        <p class="pas">este es el parrafo numero 3</p>
+        <p class="pas">este es el parrafo numero 4</p>
+
+        <script src="index.js" async></script>
+    </body>
+</html>

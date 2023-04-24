@@ -1,6 +1,7 @@
 // Crear un array vacío llamado 'toDoItems'
 // Tu codigo acá:
 
+//? array y vacio
 let toDoItems = [];
 
 
@@ -10,8 +11,12 @@ let toDoItems = [];
 // agregar tu nombre al final del texto actual. Ej: 'Aplicación creada por Franco'
 // Tu código acá:
 const span = document.querySelector('#createdBy');
-span.innerHTML = span.innerHTML + " Jonathan Rendon";
+span.innerHTML = span.innerHTML + " Jonathan Ivan Rendon Bermeo";
 
+//! lo que esta aqui abajo no lo incluye la homework lo puse yo practicando
+const texto = document.querySelector("p");
+
+texto.innerHTML = texto.innerHTML + " jonathan hizo esto";
 
 // Crear una clase denominada 'ToDo' cuyo constructor debe recibir un único parámetro del tipo string
 // con el nombre 'description' que será justamente la descripción del ToDo.
@@ -20,10 +25,17 @@ span.innerHTML = span.innerHTML + " Jonathan Rendon";
 // 2) 'complete'    : debe setearse en false
 // Ayuda: usar 'this' en el constructor
 
-function ToDo (description) {
-  // Tu código acá:
-  this.description = description;
-  this.complete = false;
+// function ToDo (description) {
+//   // Tu código acá:
+//   this.description = description;
+//   this.complete = false;
+// }
+
+class ToDo {
+  constructor(description){
+    this.description = description;
+    this.complete = false;
+  }
 }
 
 
