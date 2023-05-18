@@ -1,0 +1,22 @@
+body {
+    background-color: red;
+}
+
+ /* Pantallas de menos de 992px de ancho */
+@media screen and (max-width: 992px) {
+    body {
+        background-color: blue;
+    }
+}
+
+  /* Pantallas de menos de 600px de ancho */
+@media screen and (max-width: 600px) {
+    body {
+        background-color: black;
+    }
+}
+button {
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+}

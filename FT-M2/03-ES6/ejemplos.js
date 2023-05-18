@@ -22,31 +22,34 @@
 
 // var Walter  = new test2('Walter', "Moorlag");
 // console.log(Walter.nombre());
-var p = 'sadsa'
 
-var obj = {
-    // __proto__
-    propiedad: 1, // atajo para propiedad:propiedad
-    // Methods
-    // Computed (dynamic) property names
-    [ 'prop_' + p  ]: 42
-};
 
-`In JavaScript '\n' is a line-feed.`
+// var p = 'sadsa'
+// var obj = {
+//     // __proto__
+//     propiedad: 1, // atajo para propiedad:propiedad
+//     // Methods
+//     // Computed (dynamic) property names
+//     [ 'prop_' + p  ]: 42
+// };
+
+
+// console.log(`In JavaScript '\n' is a line-feed.`);
 
 // Multiline strings
 
-var name = "Bob", time = "today";
+// var name = "Bob", time = "today";
 
-// console.dir("Hello ${name}, how are you ${time}?")
-function hola(){
-	return  [ [1,2,3] , 4 ];
-}
-var [arr, len] = hola() 
+// console.dir(`Hello ${name}, how are you ${time}?`);
 
-// console.log(arr, len);
+// function hola(){
+// 	return  [ [1,2,3] , 4 ];
+// }
+// var [arr, leng] = hola() 
 
-// // Can be used in parameter position
+// console.log(r, l);
+
+// Can be used in parameter position
 // function g({name: x}) {
 //   console.log(x);
 // }
@@ -57,14 +60,14 @@ var [arr, len] = hola()
 // 	console.log(v.name)
 // }
 
-// y({name: 5});
+// y({name: 4});
 
-// // arrow functions
+// arrow functions
 
 // // this
 // var bob = {
 //   _name: "Bob",
-//   _friends: ['santi', 'guille'],
+//   _friends: ['santi', 'guille', 'jonathan'],
 //   printFriends() {
 //     this._friends.forEach(f  =>
 //       console.log(this._name + " knows " + f));
@@ -77,7 +80,7 @@ var [arr, len] = hola()
 //   }
 // }
 
-
+// console.log(bob._name, bob._friends);
 // bob.printFriends();
 // bob.printFriendsF();
 
@@ -96,50 +99,50 @@ var [arr, len] = hola()
 
 
 // for (var n of fibonacci) {
-//   // truncate the sequence at 1000
+//   truncate the sequence at 1000
 //   if (n > 1000)
 //     break;
 //   console.log(n);
 // }
 
 
-function* idMaker(){
-  var index = 0;
-  while(index < 5)
-    yield index++;
-  return 'gen';
-}
+// function* idMaker(){
+//   var index = 0;
+//   while(index < 5)
+//     yield index++;
+//   return 'gen';
+// }
 
-var gen = idMaker();
+// var gen = idMaker();
 
 
-for(i of gen){
-	console.log(i)
-}
+// for(i of gen){
+// 	console.log(i)
+// }
 
-function arrayWithLet(){
-  let arreglo = [];
- //cambiar let por var y descomentar el console.log anterior al return
- // y observar el resultado
-  for ( let j= 0; j < 3; j++){
-    arreglo.push(
-      function(){
-        console.log(j);
-      }
-    )
-  }
+// function arrayWithLet(){
+//   let arreglo = [];
+//  cambiar let por var y descomentar el console.log anterior al return
+//  y observar el resultado
+//   for ( var j= 0; j < 3; j++){
+//     arreglo.push(
+//       function(){
+//         console.log(j);
+//       }
+//     )
+//   }
  
- //console.log("J después del for ",j)
-return arreglo;
-}
+//  console.log("J después del for ",j)
+// return arreglo;
+// }
  
-var array = arrayWithLet();
-//Si en lugar de let se usa var en el for,
+// var array = arrayWithLet();
+// Si en lugar de let se usa var en el for,
 // el valor que imprimiría siempre sería el último tomado por el índice
-//En nuestro ejemplo: el 3
-array[0]() 
-array[1]() 
-array[2]() 
+// En nuestro ejemplo: el 3
+// array[0]() 
+// array[1]() 
+// array[2]() 
 
 // // Sets
 // var s = new Set();
@@ -153,15 +156,15 @@ array[2]()
 // m.set(s, 34);
 // m.get(s) == 34;
 
-// Weak Maps
-var ws = new WeakSet();
-var obj = {};
-var foo = {};
+// // Weak Maps
+// var ws = new WeakSet();
+// var obj = {};
+// var foo = {};
 
-ws.add(this);
-ws.add(obj);
+// ws.add(this);
+// ws.add(obj);
 
-var obj = null;
-console.log(ws);
-console.log(ws.has(this));
-console.log(ws.has(obj)) // true
+// var obj = null;
+// console.log(ws);
+// console.log(ws.has(this));
+// console.log(ws.has(obj)) // true

@@ -5,5 +5,6 @@ var toni = 'toni';
 var mati = 'mati';
 
 exports.aux = mati;
+exports.aux1 = toni;
 exports.name = function name (number) { return names[number]; };
 exports.number = function number(name) { return names.indexOf(name); };
