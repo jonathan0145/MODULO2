@@ -1,17 +1,23 @@
-(function () {
+// (function () {
 
-  window.whiteboard = new window.EventEmitter();
+  // window.whiteboard = new window.EventEmitter();
+  import whiteboard from "./event-emitter";
+  
 
   // Ultimately, the color of our stroke;
+  // En última instancia, el color de nuestro trazo;
   var color;
 
   // The color selection elements on the DOM.
+  // Los elementos de selección de color en el DOM.
   var colorElements = [].slice.call(document.querySelectorAll('.marker'));
 
   colorElements.forEach(function (el) {
 
     // Set the background color of this element
     // to its id (purple, red, blue, etc).
+    // Establecer el color de fondo de este elemento
+    // a su id (morado, rojo, azul, etc).
     el.style.backgroundColor = el.id;
 
     // Attach a click handler that will set our color variable to
@@ -113,4 +119,4 @@
 
   };
 
-})();
+// })();
