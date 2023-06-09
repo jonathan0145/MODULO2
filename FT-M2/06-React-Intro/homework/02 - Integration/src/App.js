@@ -20,6 +20,7 @@ function App () {
       <div>
         <Cards
           characters={characters}
+          onClose={() => window.alert('Emulamos que se cierra la card')}
         />
       </div>
       <hr />
